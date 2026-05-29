@@ -21,7 +21,7 @@ void Train::addCar(bool light) {
 int Train::getLength() {
   if (!first) return 0;
   int len = 0;
-  Car* cur = first;
+  const Car* cur = first;
   do {
     cur = cur->next;
     ++len;
